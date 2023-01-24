@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.2.3",
     "bootstrap": "^5.2.3",
+    "gh-pages": "^5.0.0",
     "html-entities": "^2.3.3",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.0",
@@ -16,7 +17,10 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://bebekjk.github.io/learning",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
