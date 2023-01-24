@@ -1,23 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavigationBar from './components/navbar';
+import { Route , Routes } from "react-router-dom";
+import Home from './components/home';
+import About from './components/about';
+import Profile from './components/profile';
+import Content from './components/content';
+import { useState , createContext } from 'react';
+
+export const UsernameContext = createContext();
 
 function App() {
+  const platformName = `"Platform Name"`;
+  const [username , setUsername] = useState("");
+
+  const handleUsername = (newUsername) => {
+    setUsername(newUsername);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UsernameContext.Provider value={{username, setUsername}}>
+        <NavigationBar platformName={platformName}/>
+        <Routes>
+          <Route path="/" element={<Home platformName={platformName} username={username}/>}/>
+          <Route path="/about" element={<About platformName = {platformName}/>}/>
+          <Route path="/profile" element={<Profile handleUsername={handleUsername}/>} />
+          <Route path="/content" element={<Content />} />
+        </Routes>
+      </UsernameContext.Provider>
     </div>
   );
 }
