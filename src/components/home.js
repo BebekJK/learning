@@ -9,7 +9,7 @@ function Home(props){
            <h1 style={{color: "white" , textShadow: "2px 2px 5px #39FF14 , -2px -2px 5px #FF3131"}}>WELCOME TO {props.platformName}</h1>
            <p>Website under construction...</p>
            <p>But here's some quiz: </p>
-           <Link to="/content" className="nav-item quiz-button">Go to Quiz</Link>
+           <Link to="/learning/content" className="nav-item quiz-button">Go to Quiz</Link>
         </div>
     )
 }
