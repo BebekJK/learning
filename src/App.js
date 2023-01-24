@@ -23,10 +23,10 @@ function App() {
       <UsernameContext.Provider value={{username, setUsername}}>
         <NavigationBar platformName={platformName}/>
         <Routes>
-          <Route path="/" element={<Home platformName={platformName} username={username}/>}/>
-          <Route path="/about" element={<About platformName = {platformName}/>}/>
-          <Route path="/profile" element={<Profile handleUsername={handleUsername}/>} />
-          <Route path="/content" element={<Content />} />
+          <Route path="/learning/" element={<Home platformName={platformName} username={username}/>}/>
+          <Route path="/learning/about" element={<About platformName = {platformName}/>}/>
+          <Route path="/learning/profile" element={<Profile handleUsername={handleUsername}/>} />
+          <Route path="/learning/content" element={<Content />} />
         </Routes>
       </UsernameContext.Provider>
     </div>

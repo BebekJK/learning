@@ -10,10 +10,10 @@ function NavigationBar() {
     <Container>
       <Navbar.Brand>"Platform Name"</Navbar.Brand>
       <Nav className="me-auto">
-        <Nav.Link><Link to="/" className='nav-item'>Home</Link></Nav.Link>
-        <Nav.Link><Link to='/about' className='nav-item'>About</Link></Nav.Link>
-        <Nav.Link><Link to='/profile' className='nav-item'>Profile</Link></Nav.Link>
-        <Nav.Link><Link to='/content' className='nav-item'>Content</Link></Nav.Link>
+        <Nav.Link><Link to="/learning/" className='nav-item'>Home</Link></Nav.Link>
+        <Nav.Link><Link to='/learning/about' className='nav-item'>About</Link></Nav.Link>
+        <Nav.Link><Link to='/learning/profile' className='nav-item'>Profile</Link></Nav.Link>
+        <Nav.Link><Link to='/learning/content' className='nav-item'>Content</Link></Nav.Link>
       </Nav>
     </Container>
   </Navbar>
