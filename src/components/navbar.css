@@ -1,8 +1,13 @@
 .nav-item{
     text-decoration: none;
     color: #bdbdbd;
+    transition: 0.4s;
 }
 
 .nav-item:hover{
     color: #eeeeee;
+    transform: translateY(-5px);
+    transition: 0.2s;
 }
+
+

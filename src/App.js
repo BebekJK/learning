@@ -12,7 +12,7 @@ import { useState , createContext } from 'react';
 export const UsernameContext = createContext();
 
 function App() {
-  const platformName = `"Platform Name"`;
+  const platformName = `MicroLearn`;
   const [username , setUsername] = useState("");
 
   const handleUsername = (newUsername) => {

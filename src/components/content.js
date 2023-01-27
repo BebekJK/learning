@@ -79,6 +79,16 @@ function Content(){
         while(initialQuestionList.length)initialQuestionList.pop();
         setQuestionList(initialQuestionList);
     }
+
+    useEffect(() => {
+        return () => {
+            setQuizEnded(false);
+            setQuizStarted(false);
+            setCurrentNumber(0);
+            while(initialQuestionList.length)initialQuestionList.pop();
+            setQuestionList(initialQuestionList);
+        }
+    } ,[])
     return(
         <div className="content-container" style={{marginTop: "20px"}}>
             {
