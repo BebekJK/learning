@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/learning/static/css/main.855df030.css",
-    "main.js": "/learning/static/js/main.997e4f1d.js",
+    "main.css": "/learning/static/css/main.b27754fb.css",
+    "main.js": "/learning/static/js/main.8ce13d98.js",
     "static/js/787.cb80bf76.chunk.js": "/learning/static/js/787.cb80bf76.chunk.js",
+    "static/media/kevin-qrcode.jpg": "/learning/static/media/kevin-qrcode.a89b99afbee6700b069a.jpg",
+    "static/media/ntucard-removebg-preview.png": "/learning/static/media/ntucard-removebg-preview.13f8bc724d4abc5c4de9.png",
     "static/media/logo.svg": "/learning/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/learning/index.html",
-    "main.855df030.css.map": "/learning/static/css/main.855df030.css.map",
-    "main.997e4f1d.js.map": "/learning/static/js/main.997e4f1d.js.map",
+    "main.b27754fb.css.map": "/learning/static/css/main.b27754fb.css.map",
+    "main.8ce13d98.js.map": "/learning/static/js/main.8ce13d98.js.map",
     "787.cb80bf76.chunk.js.map": "/learning/static/js/787.cb80bf76.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.855df030.css",
-    "static/js/main.997e4f1d.js"
+    "static/css/main.b27754fb.css",
+    "static/js/main.8ce13d98.js"
   ]
 }
